@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+
+}
 
 :root {
     --color-primary: #08A6E4;
@@ -11,9 +14,79 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #fff;
+    --heading-font-family: "Raleway", sans-serif;
+    --text-font-family: "Open Sans", sans-serif;
 }
 
 .container {
     max-width: 1352px;
-
+    margin: 0 auto;
 }
+
+/* HEADER START */
+
+
+
+
+
+/* HEADER END */
+
+/* BANNER START */
+
+.banner {
+    display: flex;
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-title {
+    font-family: var(--heading-font-family);
+    font-size: 49px;
+    line-height: 57px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    font-family: var(--text-font-family);
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button {
+    font-family: var(--text-font-family);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 40px;
+    color: var(--color-white);
+    padding: 22px 157px;
+    text-align: center;
+}
+
+.button-blue {
+    background-color: var(--color-primary);
+    box-shadow: var(--color-primary-shadow);
+}
+
+.banner-button {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 38px;
+}
+
+/* BANNER END */
