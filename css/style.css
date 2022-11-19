@@ -195,10 +195,6 @@ header .container {
     color: var(--color-grey);
 }
 
-.statistic-pic {
-    position: absolute;
-}
-
 .dot {
     width: 63px;
     height: 63px;
@@ -217,13 +213,254 @@ header .container {
     background-color: var(--color-green);
 }
 
+.statistic-pic {
+    position: absolute;
+    margin-left: 20px;
+    margin-top:5px;
+}
+
+.eye-pic {
+    margin-top: 15px;
+}
 /* STATISTIC END */
 
 /* BENEFITS START */
 
+.benefits {
+    background-color: var(--color-light-grey);
+}
+.benefits .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-box {
+    width: 1124px;
+    height: 370px;
+    margin-bottom: 37px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefits-box-red-text {
+    width: 416px;
+    height: 188px;
+}
+
+.benefits-box-red-text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-redish);
+    position: absolute;
+    margin-top: 50px;
+}
+
+.benefits-box-blue-text {
+    width: 416px;
+    height: 230px;
+}
+
+.benefits-box-blue-text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-primary);
+    position: absolute;
+    margin-top: 50px;
+}
+
+.benefits-box-green {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 61px;
+}
+
+.benefits-div-box {
+    width: 623px;
+    height: 370px;
+    background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benefits-box-green-text {
+    width: 554px;
+    height: 230px;
+}
+
+.benefits-box-green-text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-primary);
+    position: absolute;
+    margin-top: 50px;
+}
+
+
+.benefits-img-trumped{
+    width: 440px;
+    height: 370px;
+    background-color: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefits-box-title {
+    max-width: 348px;
+    margin-bottom: 30px;
+}
+
+.benefits-box-text {
+    font-family: var(--text-font-family);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.benefits-pic {
+    width: 386px;
+    height: 219px;
+}
+
+.benefits-box-red {
+    margin-top: 106px;
+}
+
+.benefits-box-blue {
+    flex-direction: row-reverse;
+}
+
+
+
 /* BENEFITS END */
 
 /* PRICING START */
+
+.pricing {
+    height: 616px;
+    background: var(--color-white);
+}
+
+.pricing .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    margin-top: 71px;
+    margin-bottom: 197px;
+    gap: 59px;
+}
+
+.pricing-box {
+    height: 461px;
+    width: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.red-box {
+    border: 1px solid var(--color-redish);
+}
+
+.blue-box {
+    border: 1px solid var(--color-primary);
+}
+
+.green-box {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-box-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #13253B;
+    margin-top: 34px;
+}
+
+.pricing-box-price {
+    font-family: var(--text-font-family);
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.pricing-box p {
+    font-family: var(--heading-font-family);
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.pricing-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--text-font-family);
+}
+
+.pricing-list li {
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.red-box p {
+    color: transparent;
+}
+
+.pricing-list li:first-of-type {
+    text-transform: uppercase;
+}
+
+.pricing-list-item::before {
+    content: "";
+    background-image: url("../assets/Checkmark-1.svg");
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.pricing-list-item--not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-button {
+    padding: 16px 57px;
+    margin-top: 55px;
+}
+
+.button-red {
+    background-color: var(--color-redish);
+}
+
+.button-green {
+    background-color: var(--color-green);
+}
+
 
 
 /* PRICING END */
