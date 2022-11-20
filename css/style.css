@@ -19,11 +19,8 @@
     max-width: 1352px;
     margin: 0 auto;
 }
-
 /* HEADER START */
-
 header {
-    position: relative;
     width: 100%;
     box-shadow: 0 3px 6px #00000029;
 }
@@ -48,7 +45,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     gap: calc(95px - 24px);
-
 }
 
 .nav-list-link {
@@ -69,17 +65,9 @@ header .container {
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
 }
-
-
 /* HEADER END */
 
-
 /* BANNER START */
-
-.banner {
-    display: flex;
-    position: relative;
-}
 
 .banner .container {
     display: flex;
@@ -98,7 +86,6 @@ header .container {
     line-height: 57px;
     font-weight: 400;
     color: var(--color-black);
-    text-align: center;
     margin-top: 130px;
     margin-bottom: 20px;
 }
@@ -109,7 +96,6 @@ header .container {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    text-align: center;
 }
 
 .button {
@@ -308,8 +294,7 @@ header .container {
     margin-top: 50px;
 }
 
-
-.benefits-img-trumped{
+.benefits-pic-trumped{
     width: 440px;
     height: 370px;
     background-color: var(--color-green);
@@ -318,6 +303,11 @@ header .container {
     align-items: center;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+}
+
+.benefits-img-trumped {
+    width: 296px;
+    height: 208px;
 }
 
 .benefits-box-title {
@@ -348,16 +338,15 @@ header .container {
     justify-content: flex-end;
 }
 
-
 .benefits-pic-computer::before {
     content: "";
-    width: 255px;
-    height: 255px;
+    width: 180px;
+    height: 180px;
     background-color: var(--color-redish);
     position: absolute;
     transform: rotate(45deg);
     border-radius: 41px;
-    margin-top: 38px;
+    margin-top: 48px;
 }
 
 .benefits-img-phone {
@@ -378,13 +367,9 @@ header .container {
     margin-left: -15px;
 }
 
-
 .benefits-box-blue {
     flex-direction: row-reverse;
 }
-
-
-
 /* BENEFITS END */
 
 /* PRICING START */
@@ -399,6 +384,7 @@ header .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .pricing-boxes {
@@ -521,6 +507,7 @@ header .container {
     font-size: 49px;
     line-height: 57px;
 }
+
 .contact-text {
     font-size: 16px;
     line-height: 22px;
@@ -561,7 +548,6 @@ header .container {
     display: flex;
     flex-direction: column;
 }
-
 
 .contact-form-input {
     outline: none;
@@ -635,7 +621,6 @@ header .container {
     margin-top: 20px;
     margin-bottom: 59px;
 }
-
 /* CONTACT END */
 
 footer {
@@ -673,5 +658,4 @@ footer .container {
 .footer-icon {
     margin-top: 35px;
 }
-
 /* FOOTER */
