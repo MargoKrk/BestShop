@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+$color-primary: #08A6E4;
+$color-primary-shadow: rgba(7, 172, 230, .16);
+$color-redish: #FB3B64;
+$color-green: #55DFB4;
+$color-black: #000000;
+$color-grey: #A5A5A5;
+$color-light-grey: #F7F7F7;
+$color-white: #fff;
+$heading-font-family: "Raleway", sans-serif;
+$text-font-family: "Open Sans", sans-serif;
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: $heading-font-family;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  color: $color-black;
+}

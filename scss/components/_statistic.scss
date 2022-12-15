@@ -1,0 +1,76 @@
+.statistic {
+    height: 531px;
+    background: $color-white;
+    box-shadow: 0 -5px 80px #00000029;
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    .statistic-title {
+        margin-top: 100px;
+    }
+    .statistic-boxes {
+        display: flex;
+        margin-top: 101px;
+        margin-bottom: 121px;
+        gap: 185px;
+
+      .statistic-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        .statistic-pic {
+            position: absolute;
+            margin-left: 20px;
+            margin-top:5px;
+        }
+
+        .dot {
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+        }
+
+        .statistic-number {
+            font-family: $heading-font-family;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 5.96px;
+            color: $color-black;
+            margin-top: 13px;
+            margin-bottom: 19px;
+        }
+
+        .statistic-text {
+            font-family: $heading-font-family;
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: 400;
+            text-align: center;
+            color: $color-grey;
+        }
+      }
+    }
+  }
+}
+
+.red-dot {
+  background-color: $color-redish;
+}
+
+.blue-dot {
+  background-color: $color-primary;
+}
+
+.green-dot {
+  background-color: $color-green;
+}
+
+.eye-pic {
+  margin-top: 15px;
+}

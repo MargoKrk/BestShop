@@ -1,0 +1,15 @@
+.button {
+  font-family: $text-font-family;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 40px;
+  color: $color-white;
+  padding: 22px 157px;
+  text-align: center;
+  display: block;
+}
+
+.button-blue {
+  background-color: $color-primary;
+  box-shadow: $color-primary-shadow;
+}

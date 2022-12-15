@@ -1,0 +1,41 @@
+$columns: 12;
+$column-base-width: calc(100% / $columns);
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: $tablet-width;
+    padding: 0 $base-size;
+  }
+
+  @include desktop {
+    max-width: $desktop-width;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc($base-size / 2);
+
+
+    @include tablet {
+      margin: 0 calc($base-size / 2 * -1);
+    }
+
+    [class*='col-'] {
+      min-height: 1px;
+      width: 100%;
+      padding: calc($base-size / 2);
+    }
+
+    @include tablet {
+      @for $i from 1 through $columns {
+        .col-#{$i} {
+          width: $column-base-width * $i;
+        }
+      }
+    }
+  }
+}
