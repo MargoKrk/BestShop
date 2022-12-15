@@ -211,166 +211,166 @@
 /*}*/
 /* STATISTIC END */
 
-/* BENEFITS START */
+/*!* BENEFITS START *!*/
 
-.benefits {
-    background-color: var(--color-light-grey);
-}
-.benefits .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/*.benefits {*/
+/*    background-color: var(--color-light-grey);*/
+/*}*/
+/*.benefits .container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-.benefits-box {
-    width: 1124px;
-    height: 370px;
-    margin-bottom: 37px;
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #E8E9ED;
-    border-radius: 5px;
-}
+/*.benefits-box {*/
+/*    width: 1124px;*/
+/*    height: 370px;*/
+/*    margin-bottom: 37px;*/
+/*    background-color: var(--color-white);*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    border: 1px solid #E8E9ED;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-.benefits-box-red-text {
-    width: 416px;
-    height: 188px;
-}
+/*.benefits-box-red-text {*/
+/*    width: 416px;*/
+/*    height: 188px;*/
+/*}*/
 
-.benefits-box-red-text::after {
-    content: "";
-    width: 328px;
-    height: 4px;
-    background-color: var(--color-redish);
-    position: absolute;
-    margin-top: 50px;
-}
+/*.benefits-box-red-text::after {*/
+/*    content: "";*/
+/*    width: 328px;*/
+/*    height: 4px;*/
+/*    background-color: var(--color-redish);*/
+/*    position: absolute;*/
+/*    margin-top: 50px;*/
+/*}*/
 
-.benefits-box-blue-text {
-    width: 416px;
-    height: 230px;
-}
+/*.benefits-box-blue-text {*/
+/*    width: 416px;*/
+/*    height: 230px;*/
+/*}*/
 
-.benefits-box-blue-text::after {
-    content: "";
-    width: 328px;
-    height: 4px;
-    background-color: var(--color-primary);
-    position: absolute;
-    margin-top: 50px;
-}
+/*.benefits-box-blue-text::after {*/
+/*    content: "";*/
+/*    width: 328px;*/
+/*    height: 4px;*/
+/*    background-color: var(--color-primary);*/
+/*    position: absolute;*/
+/*    margin-top: 50px;*/
+/*}*/
 
-.benefits-box-green {
-    background-color: transparent;
-    border: none;
-    display: flex;
-    gap: 61px;
-}
+/*.benefits-box-green {*/
+/*    background-color: transparent;*/
+/*    border: none;*/
+/*    display: flex;*/
+/*    gap: 61px;*/
+/*}*/
 
-.benefits-div-box {
-    width: 623px;
-    height: 370px;
-    background-color: var(--color-white);
-    border: 1px solid #E8E9ED;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.benefits-box-green-text {
-    width: 554px;
-    height: 230px;
-}
+/*.benefits-div-box {*/
+/*    width: 623px;*/
+/*    height: 370px;*/
+/*    background-color: var(--color-white);*/
+/*    border: 1px solid #E8E9ED;*/
+/*    border-radius: 5px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*.benefits-box-green-text {*/
+/*    width: 554px;*/
+/*    height: 230px;*/
+/*}*/
 
-.benefits-box-green-text::after {
-    content: "";
-    width: 328px;
-    height: 4px;
-    background-color: var(--color-green);
-    position: absolute;
-    margin-top: 50px;
-}
+/*.benefits-box-green-text::after {*/
+/*    content: "";*/
+/*    width: 328px;*/
+/*    height: 4px;*/
+/*    background-color: var(--color-green);*/
+/*    position: absolute;*/
+/*    margin-top: 50px;*/
+/*}*/
 
-.benefits-pic-trumped{
-    width: 440px;
-    height: 370px;
-    background-color: var(--color-green);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #E8E9ED;
-    border-radius: 5px;
-}
+/*.benefits-pic-trumped{*/
+/*    width: 440px;*/
+/*    height: 370px;*/
+/*    background-color: var(--color-green);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    border: 1px solid #E8E9ED;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-.benefits-img-trumped {
-    width: 296px;
-    height: 208px;
-}
+/*.benefits-img-trumped {*/
+/*    width: 296px;*/
+/*    height: 208px;*/
+/*}*/
 
-.benefits-box-title {
-    max-width: 348px;
-    margin-bottom: 30px;
-}
+/*.benefits-box-title {*/
+/*    max-width: 348px;*/
+/*    margin-bottom: 30px;*/
+/*}*/
 
-.benefits-box-text {
-    font-family: var(--text-font-family);
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    color: var(--color-black);
-}
+/*.benefits-box-text {*/
+/*    font-family: var(--text-font-family);*/
+/*    font-size: 16px;*/
+/*    line-height: 22px;*/
+/*    font-weight: 400;*/
+/*    color: var(--color-black);*/
+/*}*/
 
-.benefits-box-red {
-    margin-top: 106px;
-}
+/*.benefits-box-red {*/
+/*    margin-top: 106px;*/
+/*}*/
 
-.benefits-img-computer {
-    width: 386px;
-    height: 219px;
-    position: relative;
-    margin-top: 113px;
-}
-.benefits-pic-computer {
-    display: flex;
-    justify-content: flex-end;
-}
+/*.benefits-img-computer {*/
+/*    width: 386px;*/
+/*    height: 219px;*/
+/*    position: relative;*/
+/*    margin-top: 113px;*/
+/*}*/
+/*.benefits-pic-computer {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
 
-.benefits-pic-computer::before {
-    content: "";
-    width: 180px;
-    height: 180px;
-    background-color: var(--color-redish);
-    position: absolute;
-    transform: rotate(45deg);
-    border-radius: 41px;
-    margin-top: 48px;
-}
+/*.benefits-pic-computer::before {*/
+/*    content: "";*/
+/*    width: 180px;*/
+/*    height: 180px;*/
+/*    background-color: var(--color-redish);*/
+/*    position: absolute;*/
+/*    transform: rotate(45deg);*/
+/*    border-radius: 41px;*/
+/*    margin-top: 48px;*/
+/*}*/
 
-.benefits-img-phone {
-    width: 426px;
-    height: 328px;
-    position: relative;
-}
+/*.benefits-img-phone {*/
+/*    width: 426px;*/
+/*    height: 328px;*/
+/*    position: relative;*/
+/*}*/
 
-.benefits-pic-phone::before {
-    content: "";
-    width: 320px;
-    height: 320px;
-    background-color: var(--color-primary);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    margin-top: -10px;
-    margin-left: -15px;
-}
+/*.benefits-pic-phone::before {*/
+/*    content: "";*/
+/*    width: 320px;*/
+/*    height: 320px;*/
+/*    background-color: var(--color-primary);*/
+/*    border-radius: 50%;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    margin-top: -10px;*/
+/*    margin-left: -15px;*/
+/*}*/
 
-.benefits-box-blue {
-    flex-direction: row-reverse;
-}
-/* BENEFITS END */
+/*.benefits-box-blue {*/
+/*    flex-direction: row-reverse;*/
+/*}*/
+/*!* BENEFITS END *!*/
 
 /* PRICING START */
 
