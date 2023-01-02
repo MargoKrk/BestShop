@@ -1,26 +1,87 @@
 header {
   width: 100%;
   box-shadow: 0 3px 6px #00000029;
-  .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 70px;
-    .logo {
-        font-family: $heading-font-family;
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 37px;
-        color: $color-primary;
-        text-align: left;
-    }
-    .nav-list{
-      ul {
-          display: flex;
-          justify-content: space-between;
-          gap: calc(95px - 24px);
 
-        .nav-list-link {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: relative;
+
+    .logo {
+      font-family: $heading-font-family;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 37px;
+      color: $color-primary;
+      text-align: left;
+    }
+
+    #nav-menu-button {
+      display: none;
+
+      @include mobile {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        font-size: 35px;
+        color: $color-primary;
+        cursor: pointer;
+
+            &:checked {
+
+              & ~ nav {
+                transform: translateY(0);
+                transition: 1s;
+              }
+
+              &:before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                right: 35px;
+                color: $color-primary;
+
+              }
+            }
+
+      }
+    }
+
+    .nav-list {
+
+      @include mobile {
+        transform: translateY(-300px);
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        height: 210px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+          flex-direction: column;
+          width: 100%;
+          background-color: white;
+          padding-bottom: 34px;
+          box-shadow: 0 3px 6px #00000029;
+
+          .nav-list-element {
+            padding: 0;
+          }
+        }
+
+        .nav-list-element {
+          padding: 12px 25px;
+          cursor: pointer;
+
+
+          .nav-list-link {
             text-decoration: none;
             font-family: $text-font-family;
             font-size: 11px;
@@ -30,13 +91,18 @@ header {
             text-align: center;
             color: $color-grey;
             text-transform: uppercase;
-            cursor: pointer;
-            padding: 12px 25px;
 
-          &:hover {
+            &:hover {
               color: $color-black;
               border-bottom: 4px solid $color-primary;
+              padding-bottom: 25px;
+
+              @include mobile {
+                border: none;
+              }
+            }
           }
+
         }
 
       }

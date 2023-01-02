@@ -13,9 +13,16 @@ $color-white: #fff;
 $heading-font-family: "Raleway", sans-serif;
 $text-font-family: "Open Sans", sans-serif;
 
+$base-size: 16px;
+
 .container {
   max-width: 1352px;
   margin: 0 auto;
+
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .title {
@@ -24,4 +31,10 @@ $text-font-family: "Open Sans", sans-serif;
   line-height: 42px;
   font-weight: 400;
   color: $color-black;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
+

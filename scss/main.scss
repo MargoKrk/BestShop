@@ -1,7 +1,9 @@
 @import "variables/reset";
+@import "variables/breakpoints";
+@import "variables/mixins";
 @import "variables/base";
 //@import "variables/grid";
-@import "variables/breakpoints";
+
 
 @import "components/header";
 @import "components/banner";

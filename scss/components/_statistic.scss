@@ -1,5 +1,5 @@
 .statistic {
-    height: 531px;
+    height: 100%;
     background: $color-white;
     box-shadow: 0 -5px 80px #00000029;
 
@@ -10,6 +10,11 @@
 
     .statistic-title {
         margin-top: 100px;
+      text-align: center;
+
+      @include mobile {
+        margin-top: 50px;
+      }
     }
     .statistic-boxes {
         display: flex;
@@ -17,10 +22,19 @@
         margin-bottom: 121px;
         gap: 185px;
 
+      @include mobile {
+        display: unset;
+      }
+
       .statistic-box {
           display: flex;
           flex-direction: column;
           align-items: center;
+
+        @include mobile {
+          margin-bottom: 25px;
+        }
+
 
         .statistic-pic {
             position: absolute;
