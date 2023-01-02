@@ -1,35 +1,33 @@
 .statistic {
-    height: 100%;
-    background: $color-white;
-    box-shadow: 0 -5px 80px #00000029;
+  height: 100%;
+  background: $color-white;
+  box-shadow: 0 -5px 80px #00000029;
+  padding: 100px 0;
 
   .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
     .statistic-title {
-        margin-top: 100px;
       text-align: center;
 
       @include mobile {
         margin-top: 50px;
       }
     }
+
     .statistic-boxes {
-        display: flex;
-        margin-top: 101px;
-        margin-bottom: 121px;
-        gap: 185px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 101px;
+      margin-bottom: 121px;
 
       @include mobile {
         display: unset;
       }
 
       .statistic-box {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include mobile {
           margin-bottom: 25px;
@@ -37,36 +35,36 @@
 
 
         .statistic-pic {
-            position: absolute;
-            margin-left: 20px;
-            margin-top:5px;
+          position: absolute;
+          margin-left: 20px;
+          margin-top: 5px;
         }
 
         .dot {
-            width: 63px;
-            height: 63px;
-            border-radius: 50%;
+          width: 63px;
+          height: 63px;
+          border-radius: 50%;
         }
 
         .statistic-number {
-            font-family: $heading-font-family;
-            font-size: 20px;
-            line-height: 24px;
-            font-weight: 800;
-            text-align: center;
-            letter-spacing: 5.96px;
-            color: $color-black;
-            margin-top: 13px;
-            margin-bottom: 19px;
+          font-family: $heading-font-family;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 800;
+          text-align: center;
+          letter-spacing: 5.96px;
+          color: $color-black;
+          margin-top: 13px;
+          margin-bottom: 19px;
         }
 
         .statistic-text {
-            font-family: $heading-font-family;
-            font-size: 17px;
-            line-height: 20px;
-            font-weight: 400;
-            text-align: center;
-            color: $color-grey;
+          font-family: $heading-font-family;
+          font-size: 17px;
+          line-height: 20px;
+          font-weight: 400;
+          text-align: center;
+          color: $color-grey;
         }
       }
     }

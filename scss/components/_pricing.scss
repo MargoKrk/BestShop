@@ -1,107 +1,116 @@
-.pricing{
-    height: 616px;
-    background: $color-white;
+.pricing {
+  background: $color-white;
+
+  @include mobile {
+    height: auto;
+    margin: 50px auto;
+  }
 
   .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 100px;
+    margin-top: 100px;
 
     .pricing-title {
-
+      text-align: center;
     }
+
     .pricing-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 71px;
+      margin-bottom: 197px;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pricing-box {
+        width: 372px;
         display: flex;
-        margin-top: 71px;
-        margin-bottom: 197px;
-        gap: 59px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 18px;
 
-        .pricing-box {
-            height: 461px;
-            width: 372px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 18px;
-
-          .pricing-box-title {
-              font-size: 20px;
-              font-weight: 800;
-              color: #13253B;
-              margin-top: 34px;
-          }
-          .pricing-box-price {
-              font-family: $text-font-family;
-              font-size: 46px;
-              font-weight: 300;
-              margin-top: 14px;
-              margin-bottom: 5px;
-          }
-
-          p {
-              font-family: $heading-font-family;
-              font-size: 12px;
-              font-weight: 800;
-              margin-bottom: 50px;
-          }
+        .pricing-box-title {
+          font-size: 20px;
+          font-weight: 800;
+          color: #13253B;
+          margin-top: 34px;
         }
+
+        .pricing-box-price {
+          font-family: $text-font-family;
+          font-size: 46px;
+          font-weight: 300;
+          margin-top: 14px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-family: $heading-font-family;
+          font-size: 12px;
+          font-weight: 800;
+          margin-bottom: 50px;
+        }
+
+      }
     }
   }
 }
 
 .pricing-box ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--text-font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--text-font-family);
 
   li {
-      font-weight: 400;
-      color: var(--color-black);
-      margin-bottom: 20px;
-      font-size: 14px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 20px;
+    font-size: 14px;
 
     &:first-of-type {
-        text-transform: uppercase;
+      text-transform: uppercase;
     }
   }
 
   .pricing-list-item {
     &:before {
-        content: "";
-        background-image: url("../assets/Checkmark-1.svg");
-        width: 11px;
-        height: 11px;
-        display: inline-block;
-        margin-right: 13px;
+      content: "";
+      background-image: url("../assets/Checkmark-1.svg");
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 13px;
     }
   }
+
   .pricing-list-item--not {
     &:before {
-        background-image: url("../assets/Close.svg");
+      background-image: url("../assets/Close.svg");
     }
   }
 
 }
 
 .red-box {
-    border: 1px solid $color-redish;
+  border: 1px solid $color-redish;
 
   p {
-      color: transparent;
+    color: transparent;
   }
 }
 
 .blue-box {
-    border: 1px solid $color-primary;
-    transform: scale(1.1);
-    box-shadow: 5px 10px 27px #07ACE629;
+  border: 1px solid $color-primary;
+  transform: scale(1.1);
+  box-shadow: 5px 10px 27px #07ACE629;
+  margin: 0 40px;
 }
 
 .green-box {
-    border: 1px solid $color-green;
+  border: 1px solid $color-green;
 }
 
 .button-red {
