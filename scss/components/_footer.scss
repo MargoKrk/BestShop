@@ -1,33 +1,41 @@
 footer {
-    height: 89px;
-    background-color: $color-light-grey;
-    box-shadow: 0 -5px 40px #00000029;
+  height: 89px;
+  background-color: $color-light-grey;
+  box-shadow: 0 -5px 40px #00000029;
 
   .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .footer-info {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20.5px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20.5px;
 
       .footer-logo {
-          font-size: 26px;
-          line-height: 30px;
-          margin-bottom: 6.5px;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 6.5px;
+        color: $color-primary;
       }
+
       .footer-copy {
-          font-family: $text-font-family;
-          font-size: 11px;
-          line-height: 15px;
-          font-weight: 400;
-          color: $color-grey;
+        font-family: $text-font-family;
+        font-size: 11px;
+        line-height: 15px;
+        font-weight: 400;
+        color: $color-grey;
       }
     }
+
     .footer-icon {
-        margin-top: 35px;
+      margin-top: 35px;
+
+      img {
+        margin-right: 20px;
+      }
+
     }
   }
 }

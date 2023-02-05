@@ -19,4 +19,8 @@
   margin-top: 55px;
   bottom: -30px;
   position: relative;
+
+  @include mobile {
+    margin-top: 0;
+  }
 }

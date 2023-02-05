@@ -6,22 +6,42 @@
     margin-bottom: 59px;
     font-family: $text-font-family;
 
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 30px;
+    }
+
     .contact-column {
       width: 50%;
+
+      @include tablet {
+        width: 100%;
+      }
 
       .contact-title {
         font-size: 49px;
         line-height: 57px;
+
+        @include tablet {
+          font-size: 40px;
+          line-height: 47px;
+        }
+
       }
 
       .contact-text {
         font-size: 16px;
         line-height: 22px;
-        font-weight: 400;
         text-align: left;
         color: $color-black;
-        margin-top: 22px;
-        margin-bottom: 42px;
+        margin: 22px 0 42px;
+
+        @include tablet {
+          margin: 5px 0 35px;
+        }
+
       }
 
       .contact-link {
@@ -31,7 +51,11 @@
         font-weight: 600;
         color: $color-grey;
         margin-right: 20px;
-        display: inline-flex;
+        display: flex;
+
+        @include tablet {
+          margin-bottom: 10px;
+        }
       }
 
       .mail {
@@ -61,6 +85,11 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
 
   .contact-form-input {
     outline: none;
@@ -94,9 +123,9 @@
         width: 24px;
         height: 24px;
         display: block;
-        border: 1px solid #95989A;
+        border: 1px solid $color-grey;
         border-radius: 4px;
-        background-color: var(--color-white);
+        background-color: $color-white;
       }
 
       &:checked:after {
@@ -114,7 +143,6 @@
     font-weight: 400;
     color: #707070;
     width: 405px;
-    height: 108px;
     margin-left: 40px;
   }
 }

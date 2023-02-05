@@ -20,8 +20,7 @@
       margin-bottom: 197px;
 
       @include mobile {
-        flex-direction: column;
-        align-items: center;
+        display: unset;
       }
 
       .pricing-box {
@@ -31,92 +30,118 @@
         align-items: center;
         border-radius: 18px;
 
-        .pricing-box-title {
-          font-size: 20px;
-          font-weight: 800;
-          color: #13253B;
+        @include mobile {
+          width: auto;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 0 40px 54px 40px;
+          justify-content: center;
+        }
+
+        .pricing-details {
           margin-top: 34px;
-        }
-
-        .pricing-box-price {
-          font-family: $text-font-family;
-          font-size: 46px;
-          font-weight: 300;
-          margin-top: 14px;
-          margin-bottom: 5px;
-        }
-
-        p {
-          font-family: $heading-font-family;
-          font-size: 12px;
-          font-weight: 800;
           margin-bottom: 50px;
-        }
+          text-align: center;
 
+          @include mobile {
+            width: 50%;
+            margin: 0;
+          }
+
+
+          .pricing-box-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #13253B;
+          }
+
+          .pricing-box-price {
+            font-family: $text-font-family;
+            font-size: 46px;
+            font-weight: 300;
+            margin-top: 14px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-family: $heading-font-family;
+            font-size: 12px;
+            font-weight: 800;
+          }
+        }
+        }
       }
     }
   }
-}
 
-.pricing-box ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--text-font-family);
+  .pricing-list {
+    text-align: center;
+    font-family: var(--text-font-family);
 
-  li {
-    font-weight: 400;
-    color: var(--color-black);
-    margin-bottom: 20px;
-    font-size: 14px;
+    @include mobile {
+      width: 50%;
+      text-align: left;
+      margin-top: 25px;
+      margin-bottom: -25px;
+    }
 
-    &:first-of-type {
-      text-transform: uppercase;
+    li {
+      font-weight: 400;
+      color: var(--color-black);
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      &:first-of-type {
+        text-transform: uppercase;
+      }
+    }
+
+    .pricing-list-item {
+      &:before {
+        content: "";
+        background-image: url("../assets/Checkmark-1.svg");
+        width: 11px;
+        height: 11px;
+        display: inline-block;
+        margin-right: 13px;
+      }
+    }
+
+    .pricing-list-item--not {
+      &:before {
+        background-image: url("../assets/Close.svg");
+      }
+    }
+
+  }
+
+  .red-box {
+    border: 1px solid $color-redish;
+
+    p {
+      color: transparent;
     }
   }
 
-  .pricing-list-item {
-    &:before {
-      content: "";
-      background-image: url("../assets/Checkmark-1.svg");
-      width: 11px;
-      height: 11px;
-      display: inline-block;
-      margin-right: 13px;
+  .blue-box {
+    border: 1px solid $color-primary;
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px #07ACE629;
+    margin: 0 40px;
+
+    @include mobile {
+      margin: 0;
     }
   }
 
-  .pricing-list-item--not {
-    &:before {
-      background-image: url("../assets/Close.svg");
-    }
+  .green-box {
+    border: 1px solid $color-green;
   }
 
-}
-
-.red-box {
-  border: 1px solid $color-redish;
-
-  p {
-    color: transparent;
+  .button-red {
+    background-color: $color-redish;
   }
-}
 
-.blue-box {
-  border: 1px solid $color-primary;
-  transform: scale(1.1);
-  box-shadow: 5px 10px 27px #07ACE629;
-  margin: 0 40px;
-}
-
-.green-box {
-  border: 1px solid $color-green;
-}
-
-.button-red {
-  background-color: $color-redish;
-}
-
-.button-green {
-  background-color: $color-green;
-}
+  .button-green {
+    background-color: $color-green;
+  }
